@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filing Summary</title>
+  <style>
+    :root{
+      --max-width:800px;
+      --bg:#ffffff;
+      --card-bg:#fbfcfd;
+      --muted:#6b7280;
+      --accent:#0f172a;
+      --shadow:0 6px 18px rgba(15,23,42,0.08);
+      --radius:10px;
+      --gap:18px;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#f3f4f6 0%, #ffffff 100%);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:28px 16px;
+    }
+    .card{
+      max-width:var(--max-width);
+      margin:28px auto;
+      background:var(--card-bg);
+      padding:22px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      border:1px solid rgba(15,23,42,0.03);
+    }
+    table.meta{
+      width:100%;
+      border-collapse:collapse;
+      margin-bottom:var(--gap);
+      font-size:14px;
+    }
+    table.meta th{
+      text-align:left;
+      padding:8px 10px;
+      color:var(--muted);
+      font-weight:600;
+      width:110px;
+      vertical-align:top;
+      white-space:nowrap;
+    }
+    table.meta td{
+      padding:8px 10px;
+      vertical-align:top;
+      color:var(--accent);
+    }
+    h1{
+      margin:6px 0 12px 0;
+      font-size:20px;
+      line-height:1.2;
+      font-weight:700;
+    }
+    p.lead{
+      margin:0 0 14px 0;
+      color:#0b1220;
+      font-size:15px;
+      line-height:1.45;
+    }
+    .section{
+      margin-bottom:12px;
+    }
+    .section h3{
+      margin:8px 0;
+      font-size:14px;
+      color:var(--muted);
+      font-weight:700;
+    }
+    ul.bullets{
+      margin:6px 0 0 18px;
+      padding:0;
+      color:#0b1220;
+    }
+    ul.bullets li{
+      margin:8px 0;
+      font-size:14px;
+      line-height:1.4;
+    }
+    .anchor-only{
+      margin-top:12px;
+      margin-bottom:12px;
+    }
+    .anchor-only a{
+      color:#0645ad;
+      text-decoration:underline;
+      word-break:break-all;
+      font-size:13px;
+    }
+    .disclaimer{
+      margin-top:18px;
+      font-size:12px;
+      color:#6b7280;
+      font-style:italic;
+    }
+    @media (max-width:420px){
+      table.meta th{display:block;padding:6px 0 0 0;}
+      table.meta td{display:block;padding:2px 0 10px 0;}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="article" aria-label="Stock filing summary">
+    <table class="meta" aria-hidden="false">
+      <tr>
+        <th>Ticker</th>
+        <td>DGNX</td>
+      </tr>
+      <tr>
+        <th>Float</th>
+        <td>48.0 M</td>
+      </tr>
+      <tr>
+        <th>IO</th>
+        <td>0.27%</td>
+      </tr>
+      <tr>
+        <th>MC</th>
+        <td>159 M</td>
+      </tr>
+      <tr>
+        <th>Extra Info</th>
+        <td>High CTB</td>
+      </tr>
+    </table>
+
+    <h1>Form 6‑K Filed — Traders Monitor for Potential Short‑Term Volatility</h1>
+
+    <p class="lead">
+      A Form 6‑K was posted for the issuer. From a trader standpoint, the combination of a relatively small market cap (≈$159M), a 48M float, very low institutional/insider ownership (0.27%) and a "High CTB" note suggests conditions for elevated intraday volatility and tight borrow dynamics. Traders should read the 6‑K to identify any specific catalysts, then size positions cautiously given likely wide spreads and limited liquidity.
+    </p>
+
+    <div class="section">
+      <h3>Positives</h3>
+      <ul class="bullets">
+        <li>Low float (48M) — increases sensitivity to buying pressure and can amplify moves on modest volume.</li>
+        <li>High CTB — borrow is costly/limited, which can create short-squeeze potential if short interest exists.</li>
+        <li>Form 6‑K filing — provides a near-term catalyst; details may reveal news-driven price movement.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Negatives</h3>
+      <ul class="bullets">
+        <li>Small market cap and low IO (0.27%) — limited institutional support and fragile liquidity; large orders may cause slippage.</li>
+        <li>Likely wide spreads and thinner order books at sub-$1 levels — higher execution risk for active traders.</li>
+        <li>Information in the 6‑K could be neutral or negative; always confirm catalyst specifics before trading size exposure.</li>
+      </ul>
+    </div>
+
+    <div class="anchor-only">
+      <a href="https://www.sec.gov/Archives/edgar/data/2010499/000149315226005713/0001493152-26-005713-index.htm" target="_blank" rel="noopener noreferrer">https://www.sec.gov/Archives/edgar/data/2010499/000149315226005713/0001493152-26-005713-index.htm</a>
+    </div>
+
+    <div class="disclaimer">
+      This summary is for informational purposes only and not trading advice. Traders should perform their own due diligence, verify filing contents, and consider liquidity and risk management before entering positions.
+    </div>
+  </div>
+</body>
+</html>
